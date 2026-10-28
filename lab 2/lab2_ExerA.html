@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Programming Workshop</title> 
+    </head>
+    <body>
+
+        <header>
+            <h1> Programming Workshop 2026</h1>
+            <p>Problem Solve Error in Coding</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="#about">About the event</a></li>
+                <li> <a href="#schedule">Event Schedule</a></li>
+                <li> <a href="#register">Registration</a></li>
+            </ul>
+        </nav>
+
+        <main>
+          <section id="about">
+          <h2>About the event</h2>
+          <p>Welcome to the event.This event is designed to help you solve common coding errors.</p>
+
+          <article>
+            <h3>Keynote Speaker: Dr Amir Ngah</h3>
+            <p>Dr Amir Ngah is a renowned computer scientist with expertise in programming languages and software development. He will share his insights on effective coding practices and error resolution techniques.</p>
+          </article>
+
+          <article>
+            <h3>Guest Speaker: Dr Mashita</h3>
+            <p>Dr Mashita is a respected researcher in the field of software engineering. She will discuss strategies for debugging and improving code quality.</p>
+          </article>
+        </section>
+
+        <section id="schedule">
+          <h2>Event Schedule</h2>
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Venue</th>
+                            <th>Person in Charge</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM - 10:00 AM</td>
+                            <td>Opening Remarks and Keynote Speech</td>
+                            <td rowspan="2">Auditorium</td>
+                            <td>Dr Amir Ngah</td> 
+                        </tr>
+                        <tr>
+                            <td>10:15 AM - 11:30 AM</td>
+                            <td>Workshop Session 1: Debugging Techniques</td>
+                            <td>Dr Mashita</td>
+                        </tr>
+                        <tr>
+                            <td>11:45 AM - 1:00 PM</td>
+                            <td>Workshop Session 2: Code Optimization Strategies</td>
+                            <td>Lab 2</td>
+                            <td>Dr Mashita</td>
+                        </tr>
+                        <tr>
+                            <td>1:00 PM - 2:00 PM</td>
+                            <td>Lunch Break</td>
+                            <td>Cafeteria</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2:00 PM - 3:15 PM</td>
+                            <td>Panel Discussion: Best Practices in Software Development</td>
+                            <td rowspan="2">Auditorium</td>
+                            <td>Dr Amir Ngah</td>
+                        </tr>
+                        <tr>
+                            <td>3:30 PM - 4:30 PM</td>
+                            <td>Closing Remarks and Q&A Session</td>
+                            <td>Dr Amir Ngah</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </section>
+
+<section id="register">
+            <h2>Registration</h2>
+            <p>To register for the event, please fill out the registration form below:</p>
+            <form action="register.html" method="post">
+                <p>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="matric">Matric Number:</label><br>
+                    <input type="text" id="matric" name="matric" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <!-- Radio Button untuk Year of Study-->
+                <p>
+                    <label>Year of Study:</label><br>
+                    <input type="radio" id="year1" name="year" value="Year 1" required>
+                    <label for="year1">Year 1</label><br>
+
+                    <input type="radio" id="year2" name="year" value="Year 2">
+                    <label for="year2">Year 2</label><br>
+
+                    <input type="radio" id="year3" name="year" value="Year 3">
+                    <label for="year3">Year 3</label><br>
+
+                    <input type="radio" id="year4" name="year" value="Year 4">
+                    <label for="year4">Year 4</label>
+                </p>
+
+                <!-- Checkbox untuk Sesi Pilihan-->
+                <p>
+                    <label>Select Sessions to Join:</label><br>
+                    <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                    <label for="session1">Keynote: Building Scalable Web Applications</label><br>
+
+                    <input type="checkbox" id="session2" name="sessions" value="Python Workshop">
+                    <label for="session2">Hands-on Python Workshop</label><br>
+
+                    <input type="checkbox" id="session3" name="sessions" value="Cloud Deployment">
+                    <label for="session3">Hands-on Cloud Deployment</label><br>
+
+                    <input type="checkbox" id="session4" name="sessions" value="Panel Discussion">
+                    <label for="session4">Panel Discussion & Q&A Session</label>
+                </p>
+
+                <!-- Drop-down List untuk Programme / Faculty -->
+                <p>
+                    <label for="programme">Programme / Faculty:</label><br>
+                    <select id="programme" name="programme" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="SE">Bachelor of Software Engineering</option>
+                        <option value="MC">Bachelor of Mobile Computing</option>
+                        <option value="IM">Bachelor of Informatic Maritime</option>
+                        <option value="CC">Bachelor of Cloud Computing</option>
+                    </select>
+                </p>
+        <p>
+                    <input type="submit" value="Register Now">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computing & Information Technology</p>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
