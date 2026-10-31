@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+    </nav>
+
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Forms</td> <!-- Dilaraskan colspan kepada 2 kerana ada 3 kolum -->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td> <!-- Ditambah tag penutup </td> yang tertinggal -->
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="name"><br>
+            
+            <label>Overall rating:</label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label><br>
+            
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br>
+            
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br> <!-- Diperbetulkan id/for kepada 'lab' -->
+            
+            <input type="submit" value="Submit">
+        </form> <!-- Diperbetulkan dari </from> kepada </form> -->
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+</body>
+</html>
