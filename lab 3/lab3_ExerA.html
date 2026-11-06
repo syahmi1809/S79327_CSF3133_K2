@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Campus Bakery Online Order</title>
+    </head>
+    <body>
+
+        <!-- Header Section -->
+        <div id="header">
+            <h1>CampusBake&reg; <span>Freshly Baked Goods</span></h1>
+        </div>
+
+        <!-- Navigation Section -->
+        <div id="nav">
+            <a href="#home">Home</a> |
+            <a href="#menu">Menu</a> |
+            <a href="#order">Order Online</a> |
+            <a href="#contact">Contact Us</a> 
+        </div>
+
+        <!-- Main Content Section -->
+        <div id="content">
+            <h2>Welcome to Campus Bakery!</h2>
+            <p>We offer <strong>delicious, fresh baked goods</strong> for students and staff. Check out our <a href="#order">order section</a> below to customize your treat, or visit our <em>daily specials</em> board for discounts!</p>
+
+            <!-- Order Form Section -->
+            <div id="order">
+                <h3>Online Pre-Order Form</h3>
+                <form action="#" method="post" oninput="total.value = (parseInt(cupcakes.value) || 0) * 3 + (parseInt(cakes.value) || 0) * 5">
+                    
+                    <label for="name">Customer Name :</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter full name" required autofocus><br><br>
+
+                    <label for="phone">Phone Number :</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br><br>
+
+                    <label for="email">Email Address :</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required><br><br>
+
+                    <label for="pickdate">Pickup Date :</label><br>
+                    <input type="date" id="pickdate" name="pickdate"><br><br>
+
+                    <label for="picktime">Pickup Time :</label><br>
+                    <input type="time" id="picktime" name="picktime"><br><br>
+
+                    <label for="flavour">Flavour :</label><br>
+                    <input type="text" id="flavour" name="flavour" list="flavour-options" placeholder="Choose or enter flavour">
+                    <datalist id="flavour-options">
+                        <option value="Chocolate">
+                        <option value="Vanilla">
+                        <option value="Strawberry">
+                        <option value="Red Velvet">
+                    </datalist><br><br>
+
+                    <label for="icing">Icing Colour :</label><br>
+                    <input type="color" id="icing" name="icing" value="#f0f0f0"><br><br>
+
+                    <label for="sweetness">Sweetness Level (1-5):</label><br>
+                    <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1"><br><br>
+
+                    <!-- Quantity and Dynamic Calculator -->
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br><br>
+
+                    <label for="cakes">Cake Slices (RM 5.00 each):</label><br>
+                    <input type="number" id="cakes" name="cakes" min="0" value="0"><br><br>    
+
+                    <p>Total Cost: RM <output name="total" for="cupcakes cakes">0</output>.00</p><br>
+
+                    <input type="submit" value="Submit Order">
+                </form> 
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <h3>Price List &amp; Promotions</h3>
+            <ul>
+                <li>Cupcakes - RM 3.00 &reg;</li>
+                <li>Cake Slices - RM 5.00 &reg;</li>
+                <li>Orders &gt; 10 pieces get a free drink!</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <p>&copy; 2026 Campus Bakery. All rights reserved.</p>
+        </div>
+    </body>
+</html>
