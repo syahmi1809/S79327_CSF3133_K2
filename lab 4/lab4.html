@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Build a Responsive Web Page</h1>
+        <p>Using HTML5 and CSS</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#structure">Structure</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1: Structure -->
+        <section id="structure">
+            <h2>1. HTML5 Structure</h2>
+            <p>
+                HTML5 is used to create the structure
+                of a webpage.
+            </p>
+
+            <article>
+                <h3>About HTML5</h3>
+                <p>
+                    HTML5 provides elements such as
+                    header, nav, section, article and footer.
+                </p>
+            </article>
+        </section>
+
+        <!-- Section 2: Media -->
+        <section id="media">
+            <h2>2. Media</h2>
+            <p>This section contains a video.</p>
+
+            <figure>
+                <video controls>
+                    <source
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4">
+                </video>
+
+                <figcaption>
+                    Sample flower video.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Section 3: CSS -->
+        <section id="css">
+            <h2>3. CSS Styling</h2>
+
+            <p>
+                CSS is used to design and style
+                the webpage.
+            </p>
+
+            <h3>Text Decoration</h3>
+            <p class="underline">
+                This text is underlined using CSS.
+            </p>
+
+            <h3>Link States</h3>
+            <a href="#form">Click Here</a>
+        </section>
+
+        <!-- Section 4: Form -->
+        <section id="form">
+            <h2>4. Student Form</h2>
+
+            <form action="#" method="get">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name"
+                name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                name="email" required>
+
+                <p>Gender:</p>
+
+                <input type="radio" name="gender"
+                value="Male" required>
+                Male
+
+                <input type="radio" name="gender"
+                value="Female">
+                Female
+
+                <p>Favourite Hobbies:</p>
+
+                <input type="checkbox" name="hobby"
+                value="Reading">
+                Reading
+
+                <input type="checkbox" name="hobby"
+                value="Sports">
+                Sports
+
+                <input type="checkbox" name="hobby"
+                value="Gaming">
+                Gaming
+
+                <input type="checkbox" name="hobby"
+                value="Photography">
+                Photography
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright 2026 | Lab Exercise 4</p>
+    </footer>
+
+</body>
+</html>
