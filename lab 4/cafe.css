@@ -1,0 +1,157 @@
+/* General Page Layout & Responsive Widths */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6;
+    color: #333333;
+}
+
+header {
+    background-color: #4A2C2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #D7CCC8;
+    border-radius: 6px;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6F4E37;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #6F4E37;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Ensure navigation links stay readable while respecting LVHA states */
+nav ul li a:link {
+    color: #FFFFFF;
+}
+
+nav ul li a:visited {
+    color: #FDEBD0;
+}
+
+nav ul li a:hover {
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+
+nav ul li a:active {
+    background-color: #C0392B;
+    color: #FFFFFF;
+}
+
+/* Menu Item Cards & Old Price Styling */
+.item {
+    border-bottom: 1px dashed #BCAAA4;
+    padding: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 8px;
+}
+
+/* Responsive Video & Caption Styling */
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #6F4E37;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 8px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    background-color: #FEF9E7;
+    padding: 20px;
+    border: 1px solid #D4AC0D;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+.feedback-form button {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4A2C2A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer a:link {
+    color: #FDEBD0;
+}
+
+footer a:visited {
+    color: #D7CCC8;
+}
+
+footer a:hover {
+    color: #E67E22;
+}
+
+footer a:active {
+    color: #C0392B;
+}
