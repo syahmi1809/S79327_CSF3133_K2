@@ -1,0 +1,116 @@
+/* Tetapan Semula Global dan Tipografi */
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f4f7f6;
+color: #333333;
+line-height: 1.6;
+}
+/* Stail Pengepala (Header) */
+header {
+background: linear-gradient(135deg, #002B49, #0056b3);
+color: #ffffff;
+text-align: center;
+padding: 2.5rem 1rem;
+}
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+}
+header p {
+font-size: 1.1rem;
+font-weight: 300;
+}
+/* Stail Bar Navigasi */
+nav {
+background-color: #003855;
+display: flex;
+justify-content: center;
+padding: 0.75rem 0;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+nav a {
+color: #ffffff;
+text-decoration: none;
+padding: 0.5rem 1.5rem;
+margin: 0 0.5rem;
+font-weight: 600;
+border-radius: 4px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav a:hover {
+background-color: #008080;
+color: #ffffff;
+}
+/* Susun Atur Kandungan Utama */
+main {
+max-width: 1000px;
+margin: 2rem auto;
+padding: 0 1.5rem;
+}
+section {
+background-color: #ffffff;
+padding: 2rem;
+margin-bottom: 2rem;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+section h2 {
+color: #002B49;
+margin-bottom: 1rem;
+font-size: 1.75rem;
+border-bottom: 2px solid #008080;
+padding-bottom: 0.5rem;
+}
+p {
+margin-bottom: 1rem;
+}
+/* Stail Jadual (Disesuaikan untuk struktur 2 Kolum Fakulti & Program) */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 1rem;
+font-size: 0.95rem;
+}
+th, td {
+padding: 14px 16px;
+text-align: left;
+border-bottom: 1px solid #dddddd;
+vertical-align: top;
+}
+/* Lebar Kolum Kiri (Nama Fakulti) dikecilkan sedikit berbanding keterangan kanan agar seimbang */
+th:nth-child(1), td:nth-child(1) {
+width: 35%;
+font-weight: 600;
+color: #002B49;
+}
+th:nth-child(2), td:nth-child(2) {
+width: 65%;
+}
+th {
+background-color: #002B49;
+color: #ffffff;
+}
+tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+}
+tbody tr:hover {
+background-color: #e9f5f5;
+transition: background-color 0.2s ease;
+}
+/* Stail Pengaki (Footer) */
+footer {
+background-color: #001f33;
+color: #ffffff;
+text-align: center;
+padding: 1.5rem 1rem;
+margin-top: 3rem;
+font-size: 0.9rem;
+}
